@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogTrigger : MonoBehaviour
@@ -71,7 +72,17 @@ public class DialogTrigger : MonoBehaviour
 
     public void yesClick()
     {
-        Debug.Log("coucou, je ne fais que passer ! ");
+
+        PlayerMovement.instance.enabled = true;
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
+        animator.SetBool("buttonPressed", true);
+        animator.SetBool("enterDialog", false);
+        StartCoroutine(changeScene());
+    }
+    IEnumerator changeScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(creatureName + 1);
     }
 
     IEnumerator typeDialog(string text)
