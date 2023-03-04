@@ -36,14 +36,14 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            takeDamage(5);
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            gainHealth(1);
-        }
+        //if (Input.GetKeyDown(KeyCode.H))
+        //{
+        //    takeDamage(5);
+        //}
+        //if (Input.GetKeyDown(KeyCode.F))
+        //{
+        //    gainHealth(1);
+        //}
     }
 
     public void takeDamage(int damage)

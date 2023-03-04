@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/mainMenu.unity
     guid: 5eb90f901371bd3438478ed25a304875
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 010f71a921f8f9248b03ae318367ddb9
-  - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -41,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LastBoss.unity
     guid: 3838e688a7d2c0846ba7e55c04989135
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 010f71a921f8f9248b03ae318367ddb9
   m_configObjects: {}
