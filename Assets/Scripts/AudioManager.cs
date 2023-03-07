@@ -26,6 +26,15 @@ public class AudioManager : MonoBehaviour
         audioSource.Play();
     }
 
+    void Update()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.clip = the_clip;
+            audioSource.Play();
+        }
+    }
+
     public AudioSource PlayClip(AudioClip clip, Vector3 pos)
     {
         GameObject temp = new GameObject("temp");

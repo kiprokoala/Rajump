@@ -658,17 +658,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117228300}
   m_CullTransparentMesh: 1
---- !u!114 &138126012 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5648862143747517933, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-  m_PrefabInstance: {fileID: 232661467}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &156605133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,50 +742,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 72637059}
     m_Modifications:
-    - target: {fileID: 5648862142585028673, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142585028673, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142605928384, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142605928384, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142605928384, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142606837653, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142606837653, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862143482071388, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 765683611}
-    - target: {fileID: 5648862143482071388, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettingsWindow
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862143482071388, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862143482071389, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -5.200012
-      objectReference: {fileID: 0}
     - target: {fileID: 5648862143564648357, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -884,30 +829,6 @@ PrefabInstance:
     - target: {fileID: 5648862143564648358, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
       propertyPath: m_Name
       value: SettingsWindow
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862143564648358, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862143564648378, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: MusicSlider
-      value: 
-      objectReference: {fileID: 138126012}
-    - target: {fileID: 5648862143564648378, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: EffectsSlider
-      value: 
-      objectReference: {fileID: 1379876172}
-    - target: {fileID: 5648862144271140533, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862144271140533, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862144271140533, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
@@ -4897,7 +4818,7 @@ PrefabInstance:
     - target: {fileID: 8718328964465667035, guid: c077edadf6d52d94c89ac155932f6522, type: 3}
       propertyPath: the_clip
       value: 
-      objectReference: {fileID: 8300000, guid: 89fa95e1a3ba9584983ca9ab2dba63d9, type: 3}
+      objectReference: {fileID: 8300000, guid: d04e5fdd5c156254781209add98f7b61, type: 3}
     - target: {fileID: 8718328964465667037, guid: c077edadf6d52d94c89ac155932f6522, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5997,17 +5918,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377118941}
   m_CullTransparentMesh: 1
---- !u!114 &1379876172 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5648862142858841252, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-  m_PrefabInstance: {fileID: 232661467}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1383062699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7589706672928059760, guid: 33caa34595acfb64d99ee8747eb2fc9e, type: 3}

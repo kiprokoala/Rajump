@@ -1883,7 +1883,7 @@ PrefabInstance:
     - target: {fileID: 8718328964465667035, guid: c077edadf6d52d94c89ac155932f6522, type: 3}
       propertyPath: the_clip
       value: 
-      objectReference: {fileID: 8300000, guid: 89fa95e1a3ba9584983ca9ab2dba63d9, type: 3}
+      objectReference: {fileID: 8300000, guid: e9251c3041dee3445a2999736ebdec78, type: 3}
     - target: {fileID: 8718328964465667037, guid: c077edadf6d52d94c89ac155932f6522, type: 3}
       propertyPath: m_RootOrder
       value: 13

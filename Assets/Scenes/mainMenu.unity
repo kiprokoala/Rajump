@@ -1267,42 +1267,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 704530058}
     m_Modifications:
-    - target: {fileID: 5648862142585028673, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142585028673, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142605928384, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142605928384, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142605928384, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142606837653, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862142606837653, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5648862143482071388, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 704530059}
-    - target: {fileID: 5648862143482071389, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -5.200012
-      objectReference: {fileID: 0}
     - target: {fileID: 5648862143564648357, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1390,22 +1358,6 @@ PrefabInstance:
     - target: {fileID: 5648862143564648358, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
       propertyPath: m_Name
       value: SettingsWindow
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862143564648358, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862144271140533, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862144271140533, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5648862144271140533, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
