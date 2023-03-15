@@ -82,7 +82,7 @@ public class DialogTrigger : MonoBehaviour
     IEnumerator changeScene()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(creatureName + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     IEnumerator typeDialog(string text)

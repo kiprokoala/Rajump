@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3d3ea6ffbdf25e45be28f3c49057ceb
+guid: e8cfb79a104bc2048b753a25ca89eab3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,148 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chara_0
+      name: potion_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 33
-        width: 6
-        height: 15
+        x: 0
+        y: 7
+        width: 3
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17927327da83d5a43874d70ac0744323
-      internalID: 1242989627
+      spriteID: 54aff86b1144fa040b784900a5d85ff0
+      internalID: -284628038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_1
+      name: potion_1
       rect:
         serializedVersion: 2
-        x: 20
-        y: 33
-        width: 6
-        height: 15
+        x: 3
+        y: 7
+        width: 3
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de530d9d14c0486429a493cf68255562
-      internalID: 264514292
+      spriteID: 3a120ace0a7b74345ad6a75c69ef7357
+      internalID: 711174160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_2
+      name: potion_2
       rect:
         serializedVersion: 2
-        x: 36
-        y: 33
-        width: 6
-        height: 15
+        x: 6
+        y: 7
+        width: 3
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19a7934113d2e38429f899ad35d9e48e
-      internalID: -1361080123
+      spriteID: aba85f34bc6da4b4aa2613045e2a6589
+      internalID: -1468434330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_3
+      name: potion_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 17
-        width: 6
-        height: 15
+        x: 0
+        y: 0
+        width: 3
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1328d9a36f639b047ab7daf59b199cae
-      internalID: -1690924495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_4
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 17
-        width: 6
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c1d1722c99217e46a25ff8a7ff1155e
-      internalID: 748065451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_5
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 17
-        width: 6
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4f31c1c32232314b9f9e2ebb18c3200
-      internalID: -2019554861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_6
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 1
-        width: 6
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa28c7db0070f8a4293aca586fc0d7aa
-      internalID: 567439463
+      spriteID: 708c006b6cbe2b44a9d880c414275820
+      internalID: 1568462790
       vertices: []
       indices: 
       edges: []
@@ -262,13 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chara_1: 264514292
-      chara_2: -1361080123
-      chara_0: 1242989627
-      chara_5: -2019554861
-      chara_4: 748065451
-      chara_6: 567439463
-      chara_3: -1690924495
+      potion_0: -284628038
+      potion_3: 1568462790
+      potion_2: -1468434330
+      potion_1: 711174160
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

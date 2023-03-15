@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
         verticalMovement = Input.GetAxis("Vertical") * moveSpeed * Time.fixedDeltaTime;
 
-        Flip(rb.velocity.x);
+        transform.localScale = rb.velocity.x <= -0.3f ? new Vector3(-1, 1, 1) : (rb.velocity.x >= 0.3f) ? new Vector3(1, 1, 1) : transform.localScale;
 
         animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
     }
