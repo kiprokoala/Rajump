@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 48825dfcd37ee8f4d8d61f02241d6cd1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hat: {fileID: 21300000, guid: 449f43666715a614dad928c0a5239ea4, type: 3}
+  - cape: {fileID: 21300000, guid: c1ddc9759ac448b4286d94cc84ee777d, type: 3}
+  - Player: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
