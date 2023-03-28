@@ -1,0 +1,49 @@
+using UnityEditor;
+using UnityEngine;
+
+public class ItemManaging : MonoBehaviour
+{
+    public Sprite hat;
+    public Sprite cape;
+
+    public GameObject ghost;
+    public GameObject werewolf;
+
+    public static ItemManaging instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            return;
+        }
+        instance = this;
+    }
+
+    public void addItem(GameObject player)
+    {
+        GameObject empty = new GameObject();
+        empty.transform.parent = player.transform;
+
+        SpriteRenderer sp = empty.AddComponent<SpriteRenderer>();
+        Vector3 position = player.transform.position;
+
+        switch (DialogTrigger.instance.creatureName)
+        {
+            case "Vampire":
+                position.y += 0.35f;
+                sp.sprite = cape;
+                PlayerMovement.instance.moveSpeed *= 1.5f;
+                break;
+            case "Witch":
+                position.y += 0.05f;
+                position.x += 0.25f;
+                sp.sprite =  hat;
+                PlayerMovement.instance.jumpForce *= 2;
+                break;
+        }
+
+        empty.transform.position = position;
+        sp.sortingOrder = 200;
+    }
+}
