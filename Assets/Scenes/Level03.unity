@@ -17692,23 +17692,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 884522975999042441, guid: 8987fba025616ba48affe57cc32dd43b, type: 3}
   m_PrefabInstance: {fileID: 884522975308100309}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2129727844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129727836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f92b188011d5814aa99c5c47c706571, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hat: {fileID: 21300000, guid: 449f43666715a614dad928c0a5239ea4, type: 3}
-  cape: {fileID: 21300000, guid: c1ddc9759ac448b4286d94cc84ee777d, type: 3}
-  Player: {fileID: 2129727836}
-  ghost: {fileID: 7666569040621775270, guid: 78b5964cd31e1c34db1bd4886bdf7cad, type: 3}
-  werewolf: {fileID: 6788889655154859119, guid: 66f038202a338ce48b27888636b42869, type: 3}
 --- !u!1 &2147065459
 GameObject:
   m_ObjectHideFlags: 0
@@ -17888,3 +17871,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34b3f8c81b528e5418a4550767c4576f, type: 3}
+--- !u!1 &5947688095649590341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996100193840697017, guid: 34b3f8c81b528e5418a4550767c4576f, type: 3}
+  m_PrefabInstance: {fileID: 5947688095649590340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5947688095649590346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947688095649590341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f92b188011d5814aa99c5c47c706571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hat: {fileID: 21300000, guid: 449f43666715a614dad928c0a5239ea4, type: 3}
+  cape: {fileID: 21300000, guid: c1ddc9759ac448b4286d94cc84ee777d, type: 3}
+  ghost: {fileID: 7666569040621775270, guid: 78b5964cd31e1c34db1bd4886bdf7cad, type: 3}
+  werewolf: {fileID: 6788889655154859119, guid: 66f038202a338ce48b27888636b42869, type: 3}
+--- !u!114 &5947688095649590347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947688095649590341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48825dfcd37ee8f4d8d61f02241d6cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hat: {fileID: 21300000, guid: 449f43666715a614dad928c0a5239ea4, type: 3}
+  cape: {fileID: 21300000, guid: c1ddc9759ac448b4286d94cc84ee777d, type: 3}
