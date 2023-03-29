@@ -13,6 +13,6 @@ public class TriggeringTheDialog : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         DialogTrigger.instance.isInRange = false;
-        DialogTrigger.instance.creatureName = tag;
+        DialogTrigger.instance.creatureName = "";
     }
 }

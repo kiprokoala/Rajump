@@ -21,5 +21,6 @@ public class Level03 : MonoBehaviour
                 sp.sprite = ItemManaging.instance.hat;
                 break;
         }
+        Instantiate(ItemManaging.instance.werewolf, new Vector3(135f, 37.85f, 0), Quaternion.identity);
     }
 }

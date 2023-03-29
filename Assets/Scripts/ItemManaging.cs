@@ -28,6 +28,9 @@ public class ItemManaging : MonoBehaviour
         SpriteRenderer sp = empty.AddComponent<SpriteRenderer>();
         Vector3 position = player.transform.position;
 
+        Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+        sp.flipX = rb.velocity.x <= -0.1f || (rb.velocity.x < 0.1f && sp.flipX);
+
         switch (DialogTrigger.instance.creatureName)
         {
             case "Vampire":
@@ -38,7 +41,7 @@ public class ItemManaging : MonoBehaviour
             case "Witch":
                 position.y += 0.05f;
                 position.x += 0.25f;
-                sp.sprite =  hat;
+                sp.sprite = hat;
                 PlayerMovement.instance.jumpForce *= 2;
                 break;
         }
