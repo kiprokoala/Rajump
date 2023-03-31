@@ -12,7 +12,7 @@ public class DialogTrigger : MonoBehaviour
     public Text nameUI;
     public Text textUI;
 
-    public string creatureName;
+    public string creatureName = "Vampire";
 
     public static DialogTrigger instance;
 
@@ -82,7 +82,7 @@ public class DialogTrigger : MonoBehaviour
     IEnumerator changeScene()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//Don't forget to chaaaaaaaaaaaaaaaaaaaaange
     }
 
     IEnumerator typeDialog(string text)

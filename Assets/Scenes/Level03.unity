@@ -14909,7 +14909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8670195834705250953, guid: 3aaf229b8b4ade141a3f4b8311261fb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.79
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 8670195834725672469, guid: 3aaf229b8b4ade141a3f4b8311261fb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16248,7 +16248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3168791906644419173, guid: 1f0d7e6900c22da4b8c4b24232dbd9cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 3168791906644419173, guid: 1f0d7e6900c22da4b8c4b24232dbd9cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17833,7 +17833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3168791906644419173, guid: 1f0d7e6900c22da4b8c4b24232dbd9cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.02
+      value: 10.16
       objectReference: {fileID: 0}
     - target: {fileID: 3168791906644419173, guid: 1f0d7e6900c22da4b8c4b24232dbd9cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18132,3 +18132,4 @@ MonoBehaviour:
   cape: {fileID: 21300000, guid: c1ddc9759ac448b4286d94cc84ee777d, type: 3}
   ghost: {fileID: 7666569040621775270, guid: 78b5964cd31e1c34db1bd4886bdf7cad, type: 3}
   werewolf: {fileID: 6788889655154859119, guid: 66f038202a338ce48b27888636b42869, type: 3}
+  gotObject: 0

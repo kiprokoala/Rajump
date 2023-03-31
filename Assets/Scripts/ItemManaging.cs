@@ -30,20 +30,28 @@ public class ItemManaging : MonoBehaviour
 
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
         sp.flipX = rb.velocity.x <= -0.1f || (rb.velocity.x < 0.1f && sp.flipX);
-
-        switch (DialogTrigger.instance.creatureName)
+        try
         {
-            case "Vampire":
-                position.y += 0.35f;
-                sp.sprite = cape;
-                PlayerMovement.instance.moveSpeed *= 1.5f;
-                break;
-            case "Witch":
-                position.y += 0.05f;
-                position.x += 0.25f;
-                sp.sprite = hat;
-                PlayerMovement.instance.jumpForce *= 2;
-                break;
+            switch (DialogTrigger.instance.creatureName)
+            {
+                case "Vampire":
+                    position.y += 0.35f;
+                    sp.sprite = cape;
+                    PlayerMovement.instance.moveSpeed *= 1.5f;
+                    break;
+                case "Witch":
+                    position.y += 0.05f;
+                    position.x += 0.25f;
+                    sp.sprite = hat;
+                    PlayerMovement.instance.jumpForce *= 2;
+                    break;
+            }
+        }
+        catch //This is just for tests
+        {
+            position.y += 0.35f;
+            sp.sprite = cape;
+            PlayerMovement.instance.moveSpeed *= 1.5f;
         }
 
         empty.transform.position = position;
