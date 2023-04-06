@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour
             return;
         }
         instance = this;
-        LoadAndSaveData.instance.Charging();
+        LoadAndSaveData.instance.ChargingCoins();
     }
 
     public void addCoins(int count)

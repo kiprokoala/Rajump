@@ -11,12 +11,10 @@ public class Lifebar : MonoBehaviour
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;
-        setHealth(health);
     }
 
     public void setHealth(int health)
     {
-        Debug.Log(health);
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }

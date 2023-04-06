@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
         instance = this;
-        LoadAndSaveData.instance.Charging();
+        LoadAndSaveData.instance.ChargingLife();
     }
 
     void Update()
@@ -107,6 +107,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.animator.SetTrigger("Respawn");
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
         PlayerMovement.instance.playerCollider.enabled = true;
+        PlayerPrefs.SetInt("life", 5);
         currentHealth = maxHealth;
         lifebar.setHealth(currentHealth);
     }

@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1379876480500528582, guid: 5f708a7717a0df94fa1dd9c86c1513b1, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1379876480500528582, guid: 5f708a7717a0df94fa1dd9c86c1513b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1179,7 +1179,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -1436,7 +1436,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559919975
 GameObject:
@@ -2354,6 +2354,10 @@ PrefabInstance:
       propertyPath: PauseMenuUI
       value: 
       objectReference: {fileID: 72637058}
+    - target: {fileID: 605922373514164861, guid: 3af5da7c16519e34d8f24024ae20da20, type: 3}
+      propertyPath: gameObjectUI
+      value: 
+      objectReference: {fileID: 1869973351}
     - target: {fileID: 605922373514164863, guid: 3af5da7c16519e34d8f24024ae20da20, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2768,7 +2772,7 @@ Transform:
   - {fileID: 1780567623}
   - {fileID: 615031773}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &899832808
 GameObject:
@@ -22036,7 +22040,7 @@ RectTransform:
   - {fileID: 1869973352}
   - {fileID: 72637059}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -22404,7 +22408,7 @@ PrefabInstance:
       objectReference: {fileID: 838975680}
     - target: {fileID: 884522975999042487, guid: 8987fba025616ba48affe57cc32dd43b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 884522975999042487, guid: 8987fba025616ba48affe57cc32dd43b, type: 3}
       propertyPath: m_LocalPosition.x

@@ -20,11 +20,16 @@ public class LoadAndSaveData : MonoBehaviour
         PlayerPrefs.SetInt("life", PlayerHealth.instance.currentHealth);
     }
 
-    public void Charging()
+    public void ChargingCoins()
     {
         Inventory.instance.coinsCount = PlayerPrefs.GetInt("coins", 0);
         Inventory.instance.UpdateTextUI();
+    }
+
+    public void ChargingLife()
+    {
         PlayerHealth.instance.currentHealth = PlayerPrefs.GetInt("life", 5);
-        PlayerHealth.instance.lifebar.SetMaxHealth(PlayerHealth.instance.currentHealth);
+        PlayerHealth.instance.lifebar.SetMaxHealth(5);
+        PlayerHealth.instance.lifebar.setHealth(PlayerHealth.instance.currentHealth);
     }
 }

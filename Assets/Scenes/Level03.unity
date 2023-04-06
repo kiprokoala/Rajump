@@ -14779,6 +14779,10 @@ PrefabInstance:
       propertyPath: PauseMenuUI
       value: 
       objectReference: {fileID: 72637058}
+    - target: {fileID: 605922373514164861, guid: 3af5da7c16519e34d8f24024ae20da20, type: 3}
+      propertyPath: gameObjectUI
+      value: 
+      objectReference: {fileID: 1869973351}
     - target: {fileID: 605922373514164863, guid: 3af5da7c16519e34d8f24024ae20da20, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -14823,8 +14827,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 605922373514164860, guid: 3af5da7c16519e34d8f24024ae20da20, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3af5da7c16519e34d8f24024ae20da20, type: 3}
 --- !u!114 &765683611 stripped
 MonoBehaviour:
@@ -18132,4 +18135,3 @@ MonoBehaviour:
   cape: {fileID: 21300000, guid: c1ddc9759ac448b4286d94cc84ee777d, type: 3}
   ghost: {fileID: 7666569040621775270, guid: 78b5964cd31e1c34db1bd4886bdf7cad, type: 3}
   werewolf: {fileID: 6788889655154859119, guid: 66f038202a338ce48b27888636b42869, type: 3}
-  gotObject: 0
