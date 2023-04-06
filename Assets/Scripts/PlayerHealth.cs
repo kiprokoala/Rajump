@@ -26,24 +26,19 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
         instance = this;
-    }
-
-    void Start()
-    {
-        currentHealth = maxHealth;
-        lifebar.SetMaxHealth(currentHealth);
+        LoadAndSaveData.instance.Charging();
     }
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.H))
-        //{
-        //    takeDamage(5);
-        //}
-        //if (Input.GetKeyDown(KeyCode.F))
-        //{
-        //    gainHealth(1);
-        //}
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            takeDamage(5);
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            gainHealth(1);
+        }
     }
 
     public void takeDamage(int damage)
