@@ -23,9 +23,10 @@ public class CurrentSceneManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Inventory.instance.removeCoins(CurrentSceneManager.instance.coinsPickedUpInCurrentScene);
+            Inventory.instance.removeCoins(instance.coinsPickedUpInCurrentScene);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            PlayerHealth.instance.Respawn();
+            PlayerHealth.instance.currentHealth = PlayerPrefs.GetInt("life");
+            PlayerHealth.instance.lifebar.setHealth(PlayerHealth.instance.currentHealth);
         }
     }
 }
