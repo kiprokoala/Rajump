@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8733180783677828103}
   - component: {fileID: 7088249810952797201}
+  - component: {fileID: 519678282}
+  - component: {fileID: 519678283}
   m_Layer: 0
   m_Name: CurrentSceneManager
   m_TagString: Untagged
@@ -44,5 +46,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f7de01cb9125740825a0601a9ea121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayerPresentByDefault: 1
   coinsPickedUpInCurrentScene: 0
+  respawnPoint: {x: 0, y: 0, z: 0}
+--- !u!114 &519678282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996100193840697017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c107a2908f52b3842b104e7a6916ba79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &519678283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996100193840697017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca846f78300dde44909440090f47d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hat: {fileID: 21300000, guid: 449f43666715a614dad928c0a5239ea4, type: 3}
+  cape: {fileID: 21300000, guid: c1ddc9759ac448b4286d94cc84ee777d, type: 3}
+  ghost: {fileID: 7666569040621775270, guid: 78b5964cd31e1c34db1bd4886bdf7cad, type: 3}
+  werewolf: {fileID: 6788889655154859119, guid: 66f038202a338ce48b27888636b42869, type: 3}

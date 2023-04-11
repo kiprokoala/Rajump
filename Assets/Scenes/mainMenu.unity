@@ -1271,6 +1271,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 704530059}
+    - target: {fileID: 5648862143482071388, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5648862143482071388, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: mainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5648862143564648357, guid: 098c5e4956ad391438e62d06f0d543a3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

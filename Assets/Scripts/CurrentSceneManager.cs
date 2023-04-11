@@ -28,5 +28,9 @@ public class CurrentSceneManager : MonoBehaviour
             PlayerHealth.instance.currentHealth = PlayerPrefs.GetInt("life");
             PlayerHealth.instance.lifebar.setHealth(PlayerHealth.instance.currentHealth);
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            PlayerMovement.instance.transform.position = CurrentSceneManager.instance.respawnPoint;
+        }
     }
 }

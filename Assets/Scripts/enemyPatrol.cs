@@ -40,7 +40,6 @@ public class enemyPatrol : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
-            Console.Write(playerHealth.lifebar.slider.value);
             playerHealth.takeDamage(damageOnCollision);
         }
     }

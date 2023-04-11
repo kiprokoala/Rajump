@@ -81,8 +81,8 @@ public class DialogTrigger : MonoBehaviour
     }
     IEnumerator changeScene()
     {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//Don't forget to chaaaaaaaaaaaaaaaaaaaaange
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     IEnumerator typeDialog(string text)
@@ -91,7 +91,7 @@ public class DialogTrigger : MonoBehaviour
         foreach (char charac in text)
         {
             textUI.text += charac;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.025f);
         }
     }
 }

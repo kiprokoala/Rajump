@@ -76,18 +76,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Flip(float velocity)
-    {
-        if (velocity > 0.1f)
-        {
-            spriteRenderer.flipX = false;
-        }
-        else if(velocity < -0.1f)
-        {
-            spriteRenderer.flipX = true;
-        }
-    }
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
