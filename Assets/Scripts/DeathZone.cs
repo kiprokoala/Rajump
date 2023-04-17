@@ -16,6 +16,7 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            PlayerHealth.instance.takeDamage(1);
             AudioManager.instance.PlayClip(audioClip, transform.position);
             StartCoroutine(replacePlayer(collision));
         }

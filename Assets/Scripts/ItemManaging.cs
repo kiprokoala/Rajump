@@ -43,21 +43,21 @@ public class ItemManaging : MonoBehaviour
                     position.y += 0.05f;
                     position.x += 0.25f;
                     sp.sprite = hat;
-                    PlayerMovement.instance.jumpForce *= 2;
+                    PlayerMovement.instance.jumpForce *= 1.5f;
                     break;
             }
         }
         catch //This is just for tests
         {
 
-            //position.y += 0.35f;
-            //sp.sprite = cape;
-            //PlayerMovement.instance.moveSpeed *= 1.5f;
+            position.y += 0.35f;
+            sp.sprite = cape;
+            PlayerMovement.instance.moveSpeed *= 1.5f;
 
-            position.y += 0.05f;
-            position.x += 0.25f;
-            sp.sprite = hat;
-            PlayerMovement.instance.jumpForce *= 2;
+            //position.y += 0.05f;
+            //position.x += 0.25f;
+            //sp.sprite = hat;
+            //PlayerMovement.instance.jumpForce *= 1.5f;
         }
 
         empty.transform.position = position;
