@@ -52,9 +52,9 @@ public class DialogTrigger : MonoBehaviour
                 the_name = "Witch";
                 text = "My allies are unkillable, but with my potions, you will be unbeatable!";
                 break;
-            case "Reaper":
-                the_name = "Reaper";
-                text = "Let's get somewhere empty, so I don't make too much damage.";
+            case "crystal_ball":
+                the_name = "crystal";
+                text = "I can give you power in exchange of some money...";
                 break;
         }
         nameUI.text = the_name;
@@ -77,7 +77,10 @@ public class DialogTrigger : MonoBehaviour
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
         animator.SetBool("buttonPressed", true);
         animator.SetBool("enterDialog", false);
-        StartCoroutine(changeScene());
+        if (creatureName != "Crystal")
+        {
+            StartCoroutine(changeScene());
+        }
     }
     IEnumerator changeScene()
     {
