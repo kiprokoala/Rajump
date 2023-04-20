@@ -3,7 +3,11 @@ guid: df26300039d26624c955b354b192b166
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {fileID: 1642995365836497517, guid: f5234e8aa0db436408618399ab19df19, type: 3}
+  - nameUI: {instanceID: 0}
+  - textUI: {instanceID: 0}
+  - zombie: {fileID: 8670195833903522172, guid: 3aaf229b8b4ade141a3f4b8311261fb1, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

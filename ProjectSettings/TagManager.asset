@@ -8,6 +8,7 @@ TagManager:
   - PlayerSpawn
   - Witch
   - Vampire
+  - Crystal
   layers:
   - Default
   - TransparentFX

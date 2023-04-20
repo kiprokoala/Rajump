@@ -14,6 +14,8 @@ public class DialogTrigger : MonoBehaviour
 
     public string creatureName = "Vampire";
 
+    public GameObject zombie;
+
     public static DialogTrigger instance;
 
     private void Awake()
@@ -52,9 +54,9 @@ public class DialogTrigger : MonoBehaviour
                 the_name = "Witch";
                 text = "My allies are unkillable, but with my potions, you will be unbeatable!";
                 break;
-            case "crystal_ball":
-                the_name = "crystal";
-                text = "I can give you power in exchange of some money...";
+            case "Crystal":
+                the_name = "Crystal";
+                text = "I can give you more zombies in exchange of some money...";
                 break;
         }
         nameUI.text = the_name;
@@ -80,6 +82,19 @@ public class DialogTrigger : MonoBehaviour
         if (creatureName != "Crystal")
         {
             StartCoroutine(changeScene());
+        }else if (SceneManager.GetActiveScene().name == "Level02")
+        {
+            Inventory.instance.coinsCount -= 20;
+            Inventory.instance.UpdateTextUI();
+            GameObject zombiie = Instantiate(zombie, new Vector3(143.7f,15f,0), Quaternion.identity);
+            zombiie.transform.GetChild(2).position = new Vector3(zombiie.transform.position.x + 2, zombiie.transform.GetChild(2).position.y, 0);
+        }
+        else
+        {
+            Inventory.instance.coinsCount -= 20;
+            Inventory.instance.UpdateTextUI();
+            GameObject zombiie = Instantiate(zombie, new Vector3(73f, 70f, 0), Quaternion.identity);
+            zombiie.transform.GetChild(2).position = new Vector3(zombiie.transform.position.x + 1, zombiie.transform.GetChild(2).position.y, 0);
         }
     }
     IEnumerator changeScene()
