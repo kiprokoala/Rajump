@@ -12,7 +12,8 @@ public class DialogTrigger : MonoBehaviour
     public Text nameUI;
     public Text textUI;
 
-    public string creatureName = "Vampire";
+    public string creatureName;
+    public string crystal = "";
 
     public GameObject zombie;
 
@@ -45,7 +46,8 @@ public class DialogTrigger : MonoBehaviour
     {
         string text = "";
         string the_name = "";
-        switch (creatureName) {
+        switch (creatureName)
+        {
             case "Vampire":
                 the_name = "Vampire";
                 text = "My allies are strong, but with my blood, you will be faster than ever!";
@@ -54,10 +56,11 @@ public class DialogTrigger : MonoBehaviour
                 the_name = "Witch";
                 text = "My allies are unkillable, but with my potions, you will be unbeatable!";
                 break;
-            case "Crystal":
-                the_name = "Crystal";
-                text = "I can give you more zombies in exchange of some money...";
-                break;
+        }
+        if (crystal != "")
+        {
+            the_name = "Crystal";
+            text = "I can give you more zombies in exchange of some money...";
         }
         nameUI.text = the_name;
         StopAllCoroutines();
@@ -79,14 +82,17 @@ public class DialogTrigger : MonoBehaviour
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
         animator.SetBool("buttonPressed", true);
         animator.SetBool("enterDialog", false);
-        if (creatureName != "Crystal")
+        if (crystal == "")
         {
+            int temp = tag == "Vampire" ? 0 : 1;
+            PlayerPrefs.SetInt("path",temp);
             StartCoroutine(changeScene());
-        }else if (SceneManager.GetActiveScene().name == "Level02")
+        }
+        else if (SceneManager.GetActiveScene().name == "Level02")
         {
             Inventory.instance.coinsCount -= 20;
             Inventory.instance.UpdateTextUI();
-            GameObject zombiie = Instantiate(zombie, new Vector3(143.7f,15f,0), Quaternion.identity);
+            GameObject zombiie = Instantiate(zombie, new Vector3(143.7f, 15f, 0), Quaternion.identity);
             zombiie.transform.GetChild(2).position = new Vector3(zombiie.transform.position.x + 2, zombiie.transform.GetChild(2).position.y, 0);
         }
         else

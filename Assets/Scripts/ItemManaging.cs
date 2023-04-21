@@ -30,7 +30,7 @@ public class ItemManaging : MonoBehaviour
 
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
         sp.flipX = rb.velocity.x <= -0.1f || (rb.velocity.x < 0.1f && sp.flipX);
-        try
+        if(DialogTrigger.instance.creatureName != "")
         {
             switch (DialogTrigger.instance.creatureName)
             {
@@ -47,17 +47,22 @@ public class ItemManaging : MonoBehaviour
                     break;
             }
         }
-        catch //This is just for tests
+        else //This is just for tests / Can be a try catch
         {
-
-            //position.y += 0.35f;
-            //sp.sprite = cape;
-            //PlayerMovement.instance.moveSpeed *= 1.5f;
-
-            position.y += 0.05f;
-            position.x += 0.25f;
-            sp.sprite = hat;
-            PlayerMovement.instance.jumpForce *= 1.5f;
+            switch (PlayerPrefs.GetInt("path"))
+            {
+                case 0:
+                    position.y += 0.35f;
+                    sp.sprite = cape;
+                    PlayerMovement.instance.moveSpeed *= 1.5f;
+                    break;
+                case 1:
+                    position.y += 0.05f;
+                    position.x += 0.25f;
+                    sp.sprite = hat;
+                    PlayerMovement.instance.jumpForce *= 1.5f;
+                    break;
+            }
         }
 
         empty.transform.position = position;

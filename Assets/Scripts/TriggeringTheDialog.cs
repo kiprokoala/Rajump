@@ -9,7 +9,14 @@ public class TriggeringTheDialog : MonoBehaviour
         if (collision.tag == "Player")
         {
             DialogTrigger.instance.isInRange = true;
-            DialogTrigger.instance.creatureName = tag;
+            if(tag == "Crystal")
+            {
+                DialogTrigger.instance.crystal = tag;
+            }
+            else
+            {
+                DialogTrigger.instance.creatureName = tag;
+            }
         }
     }
 
@@ -18,6 +25,14 @@ public class TriggeringTheDialog : MonoBehaviour
         if (collision.tag == "Player")
         {
             DialogTrigger.instance.isInRange = false;
+            if (tag == "Crystal")
+            {
+                DialogTrigger.instance.crystal = "";
+            }
+            else
+            {
+                DialogTrigger.instance.creatureName = "";
+            }
         }
     }
 }
